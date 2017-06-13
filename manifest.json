@@ -1,0 +1,23 @@
+{
+  "name": "宝抓图",
+  "description": "capture-img",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "webRequest", "http://*/*", "https://*/*"
+  ],
+   "content_scripts": [ {
+      "js": [ "main.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "icons": {
+      "128": "128.png",
+      "16": "16.png",
+      "48": "48.png"
+   },
+  "browser_action": {
+      "default_title": "capture-img",
+      "default_icon": "48.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}

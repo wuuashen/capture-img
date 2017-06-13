@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0}
+        button{width: 200px; padding: 5px 0;}
+        div, .load{text-align: center;margin-top: 20px;}
+        .img-box{width: 600px;min-height: 50px;margin: 5px;text-align: center;}
+        .img-box li{display: inline-block;position: relative;margin: 4px;overflow: hidden;}
+        /*.img-box li:hover p{transform: translateY(0);opacity: 1;}*/
+        .img-box li p{position: absolute;bottom: 0;left: 0; width: 100%;height: 24px;line-height: 24px; background-color: rgba(0,0,0,.4);color: #fff;text-align: center;}
+        .img-box img{width: 100px;}
+
+    </style>
+</head>
+<body>
+    <div>
+        <button id="capture">抓抓抓</button>
+    </div>
+    <ul class="img-box" id="imgBox">
+        
+    </ul>
+</body>
+<script src="popup.js"></script>
+</html>
